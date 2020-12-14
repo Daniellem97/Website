@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Explaining page and loading css and js -->
+		<title>Gillian's B&B</title>
+		<meta name="decription"content ="Galway bed and breakfast">
+		<link rel="stylesheet" href="styles.css"/>
+		<script src="main.js"> </script>
+
+	</head>
+	<body>
+		<!-- Header of page-->
+		<header class="main-header">
+		 	<nav class="nav main-nav">
+		 		<ul>
+		 			<!-- Navigation linking to other parts of webpage -->
+			 		<li><a href="index.html"> Home </a></li>
+			 		<li><a href="rooms.html"> Rooms and Rates </a></li>
+			 		<li><a href="Sightseeing.html"> Sightseeing Tours </a></li>
+			 		<li><a href="contact.html"> Contact us </a></li>
+			 		<li><a href="rooms.html#anchor"> Book Now </a></li>
+			 	</ul>
+			 </nav>
+			 <h1 class="bandb-name bandb-name-large">Gillian's Bed and Breakfast</h1>
+		</header>
+
+		<!-- Contact us form with an option to talk on whatsapp(this would be a whatsapp number the receptionists use while on duty) -->
+		<section class="content-section container">
+			<h2 class="section-header">Contact Us</h2>
+			<h3 class="small-header"> Fill in our form or click on the whatsapp icon to instant messsage <a href="https://www.whatsapp.com" target="_blank"> <img src = "images/whatsapplogo.png" alt = "Whatsapp logo" height="40px";></a></h3>
+			<div class="contact-form-area-outer">
+				<div class="contact-form-area-inner">
+					<form class="contact-form">
+						<input type="text" name="fullname" id="fullname" placeholder="Enter Name">
+						<input type="email" name="email" placeholder="Enter Email">
+						<textarea name="description" placeholder="Fill in description"></textarea>
+					
+					</form>
+				</div>
+						<!-- button in a wrapper to put it in the middle -->
+					   <div class = "wrapper">
+					   <button onclick="my_button_click()" type="Submit" class="btn"> Submit </button>
+					   <!-- script to get the page to say submitted so the user knows the form has gone through  -->
+				<script>
+				function my_button_click()
+				{
+				alert('Submitted');
+				}
+				</script>
+				</div>
+
+					</form>
+				</div>
+			</div>
+
+
+		</section>
+			<!--footer linking to the pages social media  -->
+		<footer class="main-footer">
+			<div class="container main-footer-container"> 
+			<h3 class="footer-name">Gillians bed and breakfast</h3>
+		<ul class="nav footer-nav">
+			<li><a href="https://www.facebook.com" target="_blank"> <img src = "images/facebooklogo.png"alt = "Facebook logo"></li>
+			<li><a href="https://www.instagram.com" target="_blank"> <img src = "images/instagramlogo.png" alt = "Instagram logo"></li>
+			<li><a href="https://www.whatsapp.com" target="_blank"> <img src = "images/whatsapplogo.png" alt = "Whatsapp logo" ></li>
+		</ul>
+		</footer>
+		
+	</body>
+</html>

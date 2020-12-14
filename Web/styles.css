@@ -1,0 +1,356 @@
+/* styling all the items*/
+*{
+	box-sizing: border-box;
+	font-family: Helvetica ;
+	color: 777;
+}
+
+html,body {
+	margin:0;
+	padding:0;
+	background-color: #F1ECCB;
+}
+/*orgainising the navigration */
+.nav ul {
+	margin: 0;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	font-family: Papyrus;
+	font-size: 1.5em;
+	padding: .5em;
+	color: #FFFAF0;
+	text-decoration: none;
+}
+/* chaning the navigation a different colour when hover over so user know trheyre on the right area*/
+.nav a:hover{
+	background-color: #b8bcc6;
+}
+/* styling the navigation text and look */
+.main-nav {
+	text-align: center;
+	font-family: Papyrus;
+	font-size: 2;
+	font-weight: bold;
+	border-bottom: 1px;
+}
+
+/*styling the text areas*/
+.smaller-main {
+	text-align: center;
+	margin: 0;
+	font-size: 2.5em;
+	font-family: Papyrus;
+	font-weight: bold;
+	color: #363142;
+}
+/* adding an image to the background and styling the area with padding*/
+.main-header{
+	background-color: #EEE5EE;
+	background-image: url("Images/headerbg.jpg");
+	background-blend-mode: multiply;
+	background-size: cover;
+	padding-bottom: 30px;
+	
+}
+
+.bandb-name {
+	text-align: center;
+	margin: 0;
+	font-size: 4em;
+	font-family: Papyrus;
+	font-weight: bold;
+	color: #FFFAF0;
+}
+
+.bandb-name-large {
+	font-size: 6em;
+}
+
+.content-section {
+	margin: 1em;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+/*styling sections and smaller headers*/
+.section-header {
+	font-family: Papyrus;
+	font-weight: normal;
+	color: #333;
+	text-align: center;
+	font-size: 3em;
+}
+
+.small-header {
+	font-family: Papyrus;
+	font-weight: normal;
+	color: #333;
+	text-align: center;
+	font-size: 1.5em;
+}
+/*styling image on front page and images used in more info pages*/
+.front-image {
+	float:left;
+	height:400px;
+	width: 400px;
+	margin: 15px;
+	border-radius: 50%;
+	
+}
+
+.main-footer {
+	background-color: #363142;
+	color: white;
+	padding: .25em 0;
+}
+
+.footer-name {
+	font-family:Papyrus;
+	font-weight: normal;
+}
+
+.main-footer-container {
+	display: flex;
+	align-items: center;
+}
+
+.main-footer-container ul {
+	flex-grow: 1;
+	text-align: end;
+}
+
+.footer-nav {
+	padding :0.5em;
+}
+
+.footer-nav img {
+	width: 45px;
+}
+
+/*styling the buttons to allign the text in the center, the font and the area around*/
+
+.btn {
+	text-align: center;
+	font-family: Helvetica;
+	vertical-align: middle;
+	padding: .67em;
+	cursor: pointer;
+	background-color: #78AB46;
+	border: none;
+	border-radius: .3em;
+	font-weight: bold;
+}
+
+/*making it easier for the user to see theyre over the button*/
+
+.btn:hover {
+	background-color: #4A7023;
+	color: white;
+}
+/*lineing the sightsseeing lines*/
+
+.sightseeing-tour {
+	border-bottom: 1px solid black;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	float: middle;
+}
+/* no line for the bottom of the last item i sightseeing tour*/
+.sightseeing-tour:last-child {
+	border-bottom:none;
+}
+
+.price {
+	display: inline-block;
+	padding-right: .5em;
+	width: 1000px;
+	font-weight: bold;
+	width: 10%;
+}
+
+.ss-desc {
+	width: 59%;
+}
+/* organizing the buy tickets button so theyre all at the side*/
+.buy-btn {
+	max-width: 18%;
+	float:right;
+
+}
+/*styling room details below*/
+.room {
+	margin:30px;
+}
+
+.room-name {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.room-img {
+	height: 200px;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+.room-price {
+	flex-grow: 1;
+	color: #333;
+}
+
+.rooms {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/* anchor in page to bring the page to the book now area of the page*/
+#anchor{
+position: relative;
+padding-top: 100px;
+}
+/*styling the outside area of the form*/
+.contact-form-area-outer{
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	box-sizing: border-box;
+/* styling the inner area of the form*/
+}
+.contact-form-area-inner{
+	width: 386px;
+	height: auto;
+	margin: 0 auto;
+}
+input{
+	width: 380px;
+	height: 20px;
+	margin: 25px 0px 25px 0px;
+	border-radius: 2px;
+	display: block;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+textarea{
+	width: 380px;
+	height: 100px;
+	margin: 25px 0px 25px 0px;
+	border-radius: 2px;
+	display: block;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+/* wrapping buttons so they wont be right on top of the footer*/
+.wrapper {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title of room and link to style sheet-->
+		<title>Rooms & Rates</title>
+		<meta name="decription"content ="Galway bed and breakfast">
+		<link rel="stylesheet" href="styles.css"/>
+	</head>
+	<body>
+		<!--Navigation for the page -->
+		<header class="main-header">
+		 	<nav class="nav main-nav">
+		 		<ul>
+			 		<li><a href="index.html"> Home </a></li>
+			 		<li><a href="rooms.html"> Rooms and Rates </a></li>
+			 		<li><a href="Sightseeing.html"> Sightseeing Tours </a></li>
+			 		<li><a href="contact.html"> Contact us </a></li>
+			 		<!-- anchor to bring to book now part of page-->
+			 		<li><a href="rooms.html#anchor"> Book Now </a></li>
+			 	</ul>
+			 </nav>
+		
+			 <h1 class="bandb-name bandb-name-large">Gillian's Bed and Breakfast</h1>
+		</header>
+		<section class="content-section container">
+		<h2 class="section-header"> Rooms and Rates </h2>
+		<!-- instructions for the user if they dont realise they can scroll down-->
+		<h3 class="small-header"> Please scroll down to book your stay </h3>
+
+			<div class ="rooms">
+				<div class="room">
+					<span class="room-name"> Large Double Room </span>
+				<img class="room-img" src="images/double.jpeg" alt = "Large Double Room">
+				<div  class="details">
+						<span class="room-price"> €100.00 </span>
+						<!--More information about the rooms on a seperate page that is now viewable from the nav-->
+						 <a href="Largedouble.html"> <button class="btn" role = "button"> More Info</button> </a>
+					</div>
+				</div>
+
+
+					
+				<div class="room">
+					<strong class="room-name"> Quad Room </strong>
+				<img class="room-img" src="images/triple.jpeg" alt = "Triple Room" >
+					<div  class="details">
+						<span class="room-price"> €120.00 </span>
+						 <a href="Quadroom.html"> <button class="btn" role = "button"> More Info</button> </a>
+					</div>
+				</div>
+				
+
+					<div class="room">
+				<strong class="room-name"> Small Double Room </strong>
+				<img class="room-img" src="images/smalldouble.jpeg" alt = "Small Double Room" >
+				<div  class="details">
+						<span class="room-price"> €80.00 </span>
+						 <a href="Smalldouble.html"> <button class="btn" role = "button"> More Info</button> </a>
+					</div>
+				</div>	
+		
+
+				<div class="room">
+					<strong class="room-name"> Twin Room </strong>
+				<img class="room-img" src="images/Twin.jpeg" alt = "Twin Room" >
+					<div  class="details">				
+						<span class="room-price"> €80.00 </span>
+						 <a href="Twinroom.html"> <button class="btn" role = "button"> More Info</button> </a>
+					</div>
+				</div>	
+
+			</div>
+				</section>	
+				<hr>
+
+				<a id="anchor"></a>
+			<section class="content-section container">
+				<h2 class="section-header">Book Now</h2>
+				<div class="contact-form-area-outer">
+				<div class="contact-form-area-inner">
+
+						<div id="error"></div>
+					<form id = "form" class="contact-form" action="/" method="GET">
+						<div>
+							<!-- Details for booking -->
+					<input type="text" name="fullname" id="fullname" placeholder="Enter Name">
+						<input type="email" name="email" placeholder="Enter Email">
+						<label for="check-in"> Check-in date:</label>
+						<input type="date" name="Check-in" placeholder="date">
+						<label for="check-out"> Check-out date:</label>
+						<input type="date" name="Check-out" placeholder="date">
+						<label for="rooms">Room Selection</label>
+						<select name="rooms" class="rooms">
+						<option value = "Quad Room"> Quad Room €120.00 per night </option>
+							<option value = "Large Double Room"> Large Double Room €100.00 per night </option>
+							<option value = "Small Double Room"> Small Double Room €80.00 per night </option>
+							<option value = "Twin Room"> Twin Room €80.00 per night </option> </div>
+							
+						<textarea name="messaage" paceholder="Fill in any Special Requests"></textarea>
+
+					</form>
+				</div>
+
+				<div class = "wrapper">
+					<!---->
+					    <button onclick="my_button_click_handler()"type="Submit" class="btn"> Submit </button>
+
+				<script>
+				function my_button_click_handler()
+				{
+				alert('Congratulations, you are booked, please check your email for your confirmaiton email');
+				}
+				</script>
+				</div>
+				</div>
+
+
+
+			</section>	
+
+
+			<footer class="main-footer">
+				<div class="container main-footer-container"> 
+				<h3 class="footer-name">Gillians bed and breakfast</h3>
+			<ul class="nav footer-nav">
+				<li><a href="https://www.facebook.com" target="_blank"> <img src = "images/facebooklogo.png"alt = "Facebook logo"></li>
+				<li><a href="https://www.instagram.com" target="_blank"> <img src = "images/instagramlogo.png" alt = "Instagram logo"></li>
+				<li><a href="https://www.whatsapp.com" target="_blank"> <img src = "images/whatsapplogo.png" alt = "Whatsapp logo" ></li>
+			</ul>
+			</footer>
+			<script src="assets/main.js"> </script>
+		</body>
+	</html>
